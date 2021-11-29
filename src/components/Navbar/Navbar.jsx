@@ -15,6 +15,7 @@ export default function Navbar() {
       // getBoundingClientRect is the distance from the element to the scrollY
       sticky = navWrapper.current.getBoundingClientRect().top
     } else {
+      // This behaviour occurs because of how react renders its components
       // If we dont start at the top the page, calculate the difference (delta) from the top
       const topDelta = navWrapper.current.getBoundingClientRect().top
       // Get the actual position where we have currently scrolled to
