@@ -1,14 +1,20 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./routes/Home"
+import styled from "styled-components"
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <Container>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-    </div>
+    </Container>
   )
 }
 
-export default App
+const Container = styled.div`
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
